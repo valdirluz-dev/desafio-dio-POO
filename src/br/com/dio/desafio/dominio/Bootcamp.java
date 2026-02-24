@@ -9,9 +9,9 @@ public class Bootcamp {
     private String nome;
     private String descricao;
     private LocalDate dataInicial = LocalDate.now();
-    private LocalDate dataFinal;
-    Set<Conteudo> conteudos = new LinkedHashSet<>();
-    Set<Dev> devsInscritos = new LinkedHashSet<>();
+    private LocalDate dataFinal = dataInicial.plusDays(45);
+    private Set<Conteudo> conteudos = new LinkedHashSet<>();
+    private Set<Dev> devsInscritos = new LinkedHashSet<>();
 
     public void adicionarConteudo(Conteudo conteudo){
         this.conteudos.add(conteudo);
