@@ -2,9 +2,9 @@ package br.com.dio.desafio.dominio;
 
 public abstract class Conteudo {
 
-    protected String titulo;
-    protected String descricao;
-    protected static final int DEFAULT_XP = 10;
+    private String titulo;
+    private String descricao;
+    protected static final double DEFAULT_XP = 10d;
 
     public String getTitulo() {
         return titulo;

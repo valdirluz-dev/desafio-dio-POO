@@ -7,13 +7,12 @@ import java.util.Set;
 
 public class Dev {
     private String nome;
-    private int xp = 0;
-    Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
-    Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
+    private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
+    private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
     public void inscreverBootcamp(Bootcamp bootcamp){
         this.conteudosInscritos.addAll(bootcamp.getConteudos());
-        bootcamp.devsInscritos.add(this);
+        bootcamp.getDevsInscritos().add(this);
     }
 
     public void progredir(){
@@ -21,11 +20,18 @@ public class Dev {
         if(conteudo.isPresent()){
             this.conteudosConcluidos.add(conteudo.get());
             this.conteudosInscritos.remove(conteudo.get());
-            this.xp += (int) conteudo.get().calcularXp();
+
         }
         else {
             System.err.println("Você não está matriculado em nenhum conteúdo!");
         }
+    }
+
+    public double calcularTotalXp() {
+        return this.conteudosConcluidos
+                .stream()
+                .mapToDouble(Conteudo::calcularXp)
+                .sum();
     }
 
     public String getNome() {
@@ -36,13 +42,7 @@ public class Dev {
         this.nome = nome;
     }
 
-    public int getXp() {
-        return xp;
-    }
 
-    public void setXp(int xp) {
-        this.xp = xp;
-    }
 
     public Set<Conteudo> getConteudosInscritos() {
         return conteudosInscritos;
@@ -64,11 +64,11 @@ public class Dev {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Dev dev = (Dev) o;
-        return xp == dev.xp && Objects.equals(nome, dev.nome) && Objects.equals(conteudosInscritos, dev.conteudosInscritos) && Objects.equals(conteudosConcluidos, dev.conteudosConcluidos);
+        return Objects.equals(nome, dev.nome);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nome, xp, conteudosInscritos, conteudosConcluidos);
+        return Objects.hashCode(nome);
     }
 }
