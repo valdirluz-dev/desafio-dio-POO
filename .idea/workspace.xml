@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a7ddfab-5040-4dbb-9c70-2f0503037157" name="Changes" comment="equals, hashcode e correção de acesso no Bootcamp.java">
+    <list default="true" id="4a7ddfab-5040-4dbb-9c70-2f0503037157" name="Changes" comment="ajuste de lógica e encapsulamento">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Bootcamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Bootcamp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Dev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/dio/desafio/dominio/Dev.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +56,7 @@
     "Application.main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "modifications",
     "kotlin-language-version-configured": "true",
@@ -140,15 +142,74 @@
       <option name="project" value="LOCAL" />
       <updated>1771959829642</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="equals, hashcode e correção de acesso no Bootcamp.java">
+      <option name="closed" value="true" />
+      <created>1771962394845</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1771962394845</updated>
+    </task>
+    <task id="LOCAL-00007" summary="equals, hashcode e correção de acesso no Bootcamp.java">
+      <option name="closed" value="true" />
+      <created>1771962660535</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1771962660535</updated>
+    </task>
+    <task id="LOCAL-00008" summary="melhoria no encapsulamento e na constante">
+      <option name="closed" value="true" />
+      <created>1771963068908</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1771963068908</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ajuste de lógica e encapsulamento">
+      <option name="closed" value="true" />
+      <created>1771963701106</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1771963701106</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/modifications" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/modifications" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -159,7 +220,9 @@
     <MESSAGE value="add README.md" />
     <MESSAGE value="programa estruturado e funcional" />
     <MESSAGE value="equals, hashcode e correção de acesso no Bootcamp.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="equals, hashcode e correção de acesso no Bootcamp.java" />
+    <MESSAGE value="melhoria no encapsulamento e na constante" />
+    <MESSAGE value="ajuste de lógica e encapsulamento" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajuste de lógica e encapsulamento" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
