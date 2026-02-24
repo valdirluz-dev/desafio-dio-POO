@@ -4,8 +4,8 @@ public class Curso extends Conteudo {
 
     private int cargaHoraria;
 
-    public int getCargaHoraria() {
-        return cargaHoraria;
+    public int getCargaHoraria(){
+        return this.cargaHoraria;
     }
 
     public void setCargaHoraria(int cargaHoraria) {
@@ -20,8 +20,8 @@ public class Curso extends Conteudo {
     @Override
     public String toString() {
         return "Curso{" +
-                "titulo='" + titulo + '\'' +
-                ", descricao='" + descricao + '\'' +
+                "titulo='" + this.getTitulo() + '\'' +
+                ", descricao='" + this.getDescricao() + '\'' +
                 ", cargaHoraria=" + cargaHoraria +
                 '}';
     }
